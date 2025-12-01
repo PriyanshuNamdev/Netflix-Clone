@@ -1,0 +1,472 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: "Martel Sans", serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+    max-width: 1980px;
+    /* align-items: center;
+    position: relative; */
+}
+
+.main{
+    background-image: url(images/bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: min(1920px);
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+
+
+
+.main .box1{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    opacity: 0.7;
+    top: 0;
+    position: absolute;
+}
+
+.main nav{
+    position: relative;
+    margin: auto;
+    width: 80vw;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main nav .logo{
+    width: 148px;
+    position: relative;
+    z-index: 1;
+}
+
+nav button{
+    position: relative;
+    z-index: 1;
+}
+
+.hero{
+    height: calc(100% - 100px - 85px);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 24px;
+    padding: 0 30px;
+}
+
+.container> :nth-child(1){
+    text-align: center;
+    font-weight: 900;
+    font-size: 56px;
+    line-height: 1.2;
+    gap: 1px;
+}
+
+.container> :nth-child(2){
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px ;
+}
+.container> :nth-child(3){
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.container{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80vw;
+    height: 60%;
+    gap: 10px;
+}
+
+.btn{
+    border: 2px solid rgb(255, 255, 255);
+    color: white;
+    border-radius: 4px;
+    padding: 2px 10px;
+    align-items: center;
+    margin: 0 5px;
+}
+.btn_getstart{
+    font-size: 24px;
+    font-weight: 500;
+    padding: 5px 15px;
+    margin: 0 5px;
+}
+
+.btn_lang{
+    display:flex;
+    gap: 5px;
+    border: 1px solid gray;
+    background-color: transparent;
+    color: white;
+    align-items: center;
+    cursor: pointer;
+    /* justify-content: center; */
+}
+.top_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.btn_red{
+    background-color: rgb(229,9,20);
+    border: 2px solid rgb(229,9,20);
+    cursor: pointer;
+}
+.hero input{
+    color: white;
+    font-size: 12px;
+    padding: 15px 200px 15px 10px;
+    border: 0.1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 4px;
+    background-color: rgba(41, 41, 41, 0.5);
+    
+}
+
+.hero_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.main .seperation{
+    position: relative;
+    /* bottom: 5px; */
+}
+
+.main .seperation .bc{
+    position: relative;
+    height: 75px;
+    border: solid 0.25 transparent;
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    background-color: rgb(255, 0, 0);
+    background: linear-gradient(to right, rgba(33, 13, 22, 1) 16%, rgba(184, 40, 105, 1), rgba(229, 9, 20, 1), rgba(184, 40, 105, 1), rgba(33, 13, 22, 1) 84%);
+}
+.main .seperation .fr{
+    position: relative;
+    bottom: -5px;
+    margin-top: 5px;
+    height: 75px;
+    border: solid 0.25 transparent;
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    background-color: rgb(255, 0, 0);
+    background: radial-gradient(
+        50% 500% at 50% -420%,
+        rgba(64, 97, 231, 0.4) 80%,
+        rgba(0, 0, 0, 0.1) 100%
+        ),black
+        
+}
+
+.firstsec{
+    position: relative;
+    min-height: 450px;
+}
+.firstsec .trending{
+    position: relative;
+    color: white;
+    height: 50px;
+    width: 80vw;
+    margin: auto;
+}
+
+.shows{
+    display: flex;
+    align-items: center;
+}
+
+.shows ul li{
+    display: flex;
+    position: relative;
+}
+.shows ul li button{
+    position: relative;
+    background-color: transparent;
+    border: none;
+}
+.shows ul li span{
+    position: absolute;
+    bottom: 0;
+    color: black;
+    left: -25px;
+    font-size: 80px;
+    font-weight: 700;
+    -webkit-text-fill-color: black;
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: white;
+    text-shadow: 0px 0px 16px rgb(0, 0, 0);
+}
+.shows ul{
+    padding: 16px 22px;
+    scroll-margin-inline-start: 15px;
+    scroll-snap-type: x mandatory;
+    background: transparent;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    gap: 55px;
+    display: flex;
+    list-style: none;
+}
+
+.shows_filter select{
+    background-color: rgba(128, 128, 128, 0.155);
+    color: white;
+    border-radius: 3px;
+    padding: 5px;
+    margin: 0 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.show_box img{
+    height: 280px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.showscroll_btnbg{
+    position: absolute;
+    right: 0;
+    background-color: black;
+    height: 296px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    
+}
+.showscroll_btn{
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(32, 32, 32);
+    border: none;
+    border-radius: 10px;
+}
+
+.secondsec{
+    width: 80vw;
+    margin: auto;
+    margin-top: 12px;
+    overflow: hidden;
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.secondsec .sec2 ul{
+    width: 80vw;
+    margin: auto;
+    height: 40vw;
+    overflow-y:auto;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.joinbox{
+    box-sizing: border-box;
+    background:linear-gradient(
+        149deg,
+        #192247 0%,
+        #210e17 96.86%
+        );
+        height: 50;
+        width: 100%;
+        margin: 10px;
+        border-radius: 10px;
+        padding: 10px ;
+    }
+        
+.joinbox> :nth-child(1){
+    line-height: 1;
+    margin: 0 0 10px 0;
+    font-size: 24px;
+    font-weight: 500;
+}
+.joinbox> :nth-child(2){
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.faq{
+    background: black;
+    color: white;
+    padding: 34px;
+    max-width: 80vw;
+    margin: auto;
+}
+
+.faq h2{
+    /* text-align: ; */
+    font-size: 28px;
+    font-weight: 500px;
+    
+}
+.que_box:hover{
+    background-color: rgb(77, 77, 77);
+}
+
+.que_box{
+    transition: all 0.3s ease-in-out;
+    font-size: 30px;
+    line-height: 1;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    padding: 24px;
+    background-color: rgb(45, 45, 45);
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+.getstart{
+    margin-top:24px ;
+    color: white;
+    text-align: center;
+    width: 50vw;
+    margin: auto;
+    font-size: 16px;
+    font-weight: 400;
+}
+.getstart .hero_btn{
+    display: flex;
+    margin-top: 10px;
+    flex-shrink: 0;
+}
+.getstart input{
+    color: white;
+    font-size: 16px;
+    padding: 15px 200px 15px 10px;
+    border: 0.1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 4px;
+    background-color: rgba(41, 41, 41, 0.5);
+    width: 50%;
+    margin: 0 5px 0 0 ;
+}
+
+footer{
+    color: white;
+    margin: 34px 0;
+}
+
+footer .question{
+    width: 80vw;
+    margin: 34px auto;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer{
+    width: 80vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.footer .links{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer a{ 
+    color: rgba(255, 255, 255, 0.7);
+}
+
+footer .langselect select option{
+    background-color: white;
+    color: black;
+}
+footer .langselect select{
+    background: transparent;
+    color: white;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 4px;
+    /* width: 80px; */
+}
+footer .langselect{
+    width: 80vw;
+    margin: 34px auto;
+}
+
+footer .netflixIndia{
+    width: 80vw;
+    margin: 34px auto;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.7);
+}
+@media screen and ( max-width: 1280px ){
+    .main{
+        height: 80vh;
+    }
+    .container .c1{
+        font-size: 48px;
+    }
+    
+    .container .c2{
+        font-size: 16px ;
+    }
+    .container .c3{
+        font-size: 14px;
+} 
+}
+
+@media ( max-width: 702px){
+    .main{
+        height: 50vh;
+    }
+    .main nav{
+        height: 150px;
+    }
+    
+    .main nav .logo{
+        width: 48px;
+        position: relative;
+        z-index: 1;
+    }
+    .container> :nth-child(1){
+        font-size: 42px;
+    }
+    
+    .container> :nth-child(2){
+        font-size: 14px ;
+    }
+    .container> :nth-child(3){
+        font-size: 12px;
+    }
+    .hero_btn{
+        display: flex;
+        flex-direction: column;
+    }
+}
